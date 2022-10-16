@@ -95,6 +95,7 @@ function App() {
                     <li>React</li>
                     <li>Node</li>
                     <li>MySql</li>
+                    <li>Copious Amounts of Stress Management</li>
                   </ul>
 
                   <ul>
