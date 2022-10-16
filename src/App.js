@@ -79,8 +79,8 @@ function App() {
                 <p>
                   Frontend developer with primary focus on React:{" "}
                   <a
-                    href="src/TechResume.pdf"
-                    download={"SGtechresume.pdf"}
+                    href={resume}
+                    download="SGtechresume.pdf"
                     target="_blank"
                     style={{ fontSize: "15px" }}
                   >
@@ -111,7 +111,10 @@ function App() {
 
                 <h3>Find me on Github</h3>
 
-                <a target="_blank" href="#">
+                <a
+                  target="_blank"
+                  href="https://github.com/ArtisticDevelopment"
+                >
                   Github: @ArtisticDevelopment
                 </a>
               </div>
