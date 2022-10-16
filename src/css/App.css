@@ -22,7 +22,11 @@ html, body{
 
 a{
   text-decoration: none;
-  color: rgb(11, 77, 232);
+  color: rgb(228, 0, 0);
+  border-bottom: 1px solid gray;
+  padding-bottom: 5px;
+
+  
 }
  
 
@@ -101,12 +105,24 @@ h6{font-size: 16px}
 
 #navigation li{
   display: inline-block;
-  margin: 0 5px;
+  margin: 0 10px;
+  font-size: 1.3em;
+  
 }
-
-.dots-wrapper{
+.logo-wrapper{
   display: flex;
   padding: 10px;
+}
+
+#logo{
+  width: 100px;
+  padding: 10px;
+}
+
+#intro-title{
+  display: block;
+  margin: auto;
+  float: right;
 }
 
 #profile-pic{
@@ -383,6 +399,16 @@ border-width: 5px;
     'right-column'
     ;
   }
+  .nav-wrapper{
+    flex-direction: column;
+  }
+
+  #navigation li{
+    border-bottom: 1px solid gray;
+    border-radius: 5px;
+    padding: 5px;
+  }
+
   .right-column{
     justify-content: center;
     margin-bottom: 10px;
