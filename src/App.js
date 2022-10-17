@@ -6,8 +6,49 @@ import project1 from "./images/project1.jpg";
 import project2 from "./images/project2.jpg";
 import github from "./images/github.jpg";
 import resume from "../src/TechResume.pdf";
+import axios from "axios";
 
 function App() {
+  const [name, setName] = useState("");
+  const [subject, setSubject] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  function nameChange(event) {
+    setName(event.target.value);
+  }
+  function subjectChange(event) {
+    setSubject(event.target.value);
+  }
+  function emailChange(event) {
+    setEmail(event.target.value);
+  }
+  function messageChange(event) {
+    setMessage(event.target.value);
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    console.log(name, subject, email, message);
+
+    axios({
+      method: "POST",
+      url: "http://localhost:3002/send",
+      data: { name, subject, email, message },
+    }).then((response) => {
+      if (response.data.status === "success") {
+        alert("Message Sent!");
+      } else if (response.data.status === "fail") {
+        alert("Message failed to send");
+      }
+    });
+
+    setName("");
+    setSubject("");
+    setEmail("");
+    setMessage("");
+  }
+
   return (
     <>
       <main id="main-body">
@@ -190,7 +231,7 @@ function App() {
             <div className="contact-wrapper">
               <h3 style={{ textAlign: "center" }}>Get in touch with me</h3>
 
-              <form id="contact-form">
+              <form id="contact-form" onSubmit={handleSubmit} method="POST">
                 <label>
                   Name:{" "}
                   <input
@@ -198,6 +239,8 @@ function App() {
                     className="contact-input"
                     id="input-name"
                     name="name"
+                    value={name}
+                    onChange={nameChange}
                   ></input>
                 </label>
 
@@ -209,6 +252,8 @@ function App() {
                     className="contact-input"
                     id="input-subject"
                     name="subject"
+                    value={subject}
+                    onChange={subjectChange}
                   ></input>
                 </label>
 
@@ -219,6 +264,8 @@ function App() {
                     className="contact-input"
                     id="input-email"
                     name="email"
+                    value={email}
+                    onChange={emailChange}
                   ></input>
                 </label>
 
@@ -230,6 +277,8 @@ function App() {
                     rows="10"
                     className="contact-input"
                     name="message"
+                    value={message}
+                    onChange={messageChange}
                   ></textarea>
                 </label>
 
