@@ -4,6 +4,7 @@ import image from "./images/main.jpg";
 import logo from "./images/logo.jpg";
 import project1 from "./images/project1.jpg";
 import project2 from "./images/project2.jpg";
+import project3 from "./images/project3.jpg";
 import github from "./images/github.jpg";
 import resume from "../src/TechResume.pdf";
 import axios from "axios";
@@ -206,7 +207,7 @@ function App() {
 
               <div>
                 <div className="post">
-                  <img className="thumbnail" src={project2} alt="ran" />
+                  <img className="thumbnail" src={project3} alt="ran" />
                   <div className="post-preview">
                     <h6 className="post-title">Photography Website</h6>
                     <p className="post-intro">
@@ -214,7 +215,7 @@ function App() {
                       one.
                     </p>
                     <a
-                      href="#"
+                      href="https://artisticdevelopment.github.io/photog-website/"
                       className="post-link"
                       style={{ paddingTop: "19px" }}
                     >
