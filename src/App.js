@@ -190,7 +190,10 @@ function App() {
                       A project in development where a gamer can enter their
                       gamertag and recieve their stats.
                     </p>
-                    <a href="#" className="post-link">
+                    <a
+                      href="https://artisticdevelopment.github.io/Pubg-API/"
+                      className="post-link"
+                    >
                       this link works, I swear
                     </a>
                   </div>
