@@ -222,7 +222,7 @@ function App() {
             </div>
           </div>
         </section>
-
+        {/* 
         <section className="s2">
           <div className="main-container">
             <div className="contact-wrapper">
@@ -283,7 +283,7 @@ function App() {
               </form>
             </div>
           </div>
-        </section>
+        </section> */}
       </main>
     </>
   );
