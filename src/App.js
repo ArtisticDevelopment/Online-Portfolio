@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./css/App.css";
-import image from "./images/main.jpg";
 import logo from "./images/logo.jpg";
 import project1 from "./images/project1.jpg";
 import project2 from "./images/project2.jpg";
@@ -51,53 +50,46 @@ function App() {
     setMessage("");
   }
 
+  var header = document.getElementById("intro-header");
+
+  // var typewriter = new Typewriter(header, {
+  //   loop: true,
+  //   delay: 100,
+  // });
+
   return (
     <>
       <main id="main-body">
         <section className="s1">
           <div className="main-container">
-            <div className="greeting-wrapper">
-              <h1>Hi, I'm Your Next Hire</h1>
+            <div className="nav-wrapper">
+              <div className="logo-wrapper">
+                <img id="logo" className="logo" src={logo} />
+                <h3 id="intro-title">ArtisticDevelopment</h3>
+              </div>
+              <ul id="navigation">
+                <li>
+                  <a href="#contact-form">Contact</a>
+                </li>
+                <li>
+                  <a href="#about">About</a>
+                </li>
+              </ul>
             </div>
 
             <div className="intro-wrapper">
-              <div className="nav-wrapper">
-                <div className="logo-wrapper">
-                  <img id="logo" className="logo" src={logo} />
-                  <h3 id="intro-title">ArtisticDevelopment</h3>
-                </div>
-                <ul id="navigation">
-                  <li>
-                    <a href="#contact-form">Contact</a>
-                  </li>
-                  <li>
-                    <a href="#about">About</a>
-                  </li>
-                </ul>
-              </div>
-
-              <div className="left-column">
-                <img id="profile-pic" src={image} />
-                <h5 style={{ textAlign: "center", lineHeight: "0" }}>
-                  Family Photo
-                </h5>
-              </div>
-
-              <div className="right-column">
-                <div id="preview-shadow">
-                  <div id="preview">
-                    <div id="corner-tl" className="corner"></div>
-                    <div id="corner-tr" className="corner"></div>
-                    <h3>What I Do</h3>
-                    <p style={{ color: "black" }}>
-                      I started as a Photographer, but I'll end as a Software
-                      Engineer.
-                    </p>
-                    <div id="corner-br" className="corner"></div>
-                    <div id="corner-bl" className="corner"></div>
-                  </div>
-                </div>
-              </div>
+              <h2 id="intro-header">
+                I'm the{" "}
+                <span
+                  id="typewriter"
+                  data-period="2000"
+                  data-type='["Developer", "Photographer", "UI/UX Designer"]'
+                >
+                  <span class="intro-classifier">Developer </span>/
+                  <span class="intro-classifier">Photographer </span>/
+                  <span class="intro-classifier">Designer </span>
+                </span>
+              </h2>
             </div>
           </div>
         </section>
@@ -125,7 +117,7 @@ function App() {
                     href={resume}
                     download="SGtechresume.pdf"
                     target="_blank"
-                    style={{ fontSize: "15px" }}
+                    style={{ fontSize: "15px", border: "unset" }}
                   >
                     <br></br>
                     Download Resume
@@ -219,7 +211,7 @@ function App() {
                       className="post-link"
                       style={{ paddingTop: "19px" }}
                     >
-                      Go to website
+                      go to website
                     </a>
                   </div>
                 </div>
