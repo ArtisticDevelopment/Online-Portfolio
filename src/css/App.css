@@ -392,5 +392,12 @@ border-width: 5px;
     border-bottom: 1px solid black;
   }
 
+  @media screen and (max-width: 500px){
+    #intro-title{
+      font-size: 23px;
+      align-self: center;
+    }
+  }
+
   
 }
