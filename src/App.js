@@ -69,10 +69,10 @@ function App() {
               </div>
               <ul id="navigation">
                 <li>
-                  <a href="#contact-form">Contact</a>
+                  <a href="#about">About</a>
                 </li>
                 <li>
-                  <a href="#about">About</a>
+                  <a href="#projects">Projects</a>
                 </li>
               </ul>
             </div>
@@ -166,7 +166,7 @@ function App() {
             </h3>
             <div className="post-wrapper">
               <div>
-                <div className="post">
+                <div className="post" id="projects">
                   <img className="thumbnail" src={project1} />
                   <div className="post-preview">
                     <h6 className="post-title">Online Portfolio</h6>

@@ -392,7 +392,7 @@ border-width: 5px;
     border-bottom: 1px solid black;
   }
 
-  @media screen and (max-width: 500px){
+  @media screen and (max-width: 650px){
     #intro-title{
       font-size: 18px;
       align-self: center;
