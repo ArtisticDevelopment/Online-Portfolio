@@ -394,7 +394,7 @@ border-width: 5px;
 
   @media screen and (max-width: 500px){
     #intro-title{
-      font-size: 23px;
+      font-size: 18px;
       align-self: center;
     }
   }
