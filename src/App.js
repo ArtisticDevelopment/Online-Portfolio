@@ -187,8 +187,8 @@ function App() {
                   <div className="post-preview">
                     <h6 className="post-title">PUBG API</h6>
                     <p className="post-intro">
-                      A project in development where a gamer can enter their
-                      gamertag and recieve their stats.
+                      Currently working on this one so expect everything to
+                      break.
                     </p>
                     <a
                       href="https://artisticdevelopment.github.io/Pubg-API/"
