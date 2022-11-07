@@ -187,11 +187,11 @@ function App() {
                   <div className="post-preview">
                     <h6 className="post-title">PUBG API</h6>
                     <p className="post-intro">
-                      Currently working on this one so expect everything to
-                      break.
+                      Currently working on this one. But it collects data and
+                      can be seen by inspecting the page/console.
                     </p>
                     <a
-                      href="https://artisticdevelopment.github.io/Pubg-API/"
+                      href="https://artisticdevelopment.github.io/spotify-clone/"
                       className="post-link"
                     >
                       this link works, I swear
